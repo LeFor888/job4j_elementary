@@ -27,6 +27,6 @@ public class FitnessTest {
     @Test
     public void whenIvanEqualByFewNik() {
         int month = Fitness.calc(90, 90);
-        assertThat(month, is(0));
+        assertThat(month, is(1));
     }
 }

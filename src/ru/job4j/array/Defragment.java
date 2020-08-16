@@ -8,15 +8,20 @@ public class Defragment {
                 for (int j = point + 1; j < array.length; j++) {
                     if (array[j] != null) {
                         int word = j;
-                        String temp = array[point];
-                        array[point] = array[word];
-                        array[word] = temp;
+                        Defragment.swap(array, point, word);
                         break;
                     }
                 }
             }
             System.out.print(array[index] + " ");
         }
+        return array;
+    }
+
+    public static String[] swap(String[] array, int point, int word) {
+        String temp = array[point];
+        array[point] = array[word];
+        array[word] = temp;
         return array;
     }
 

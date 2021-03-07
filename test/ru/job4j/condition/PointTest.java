@@ -20,4 +20,12 @@ public class PointTest {
         Assert.assertEquals(5, out, 0.01);
     }
 
+    @Test
+    public void when156to375then3() {
+        Point a = new Point(1, 5, 6);
+        Point b = new Point(3, 7, 5);
+        double out = a.distance3d(b);
+        Assert.assertEquals(3, out, 0.01);
+    }
+
 }
